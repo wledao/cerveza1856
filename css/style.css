@@ -1,0 +1,183 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/*Importo los scss de las diferentes secciones */
+header {
+  background-image: url(../images/header.jpg);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: center center;
+  height: 41em;
+  opacity: 1;
+  position: relative;
+}
+
+/*Colores para las secciones*/
+/*Altura para las secciones al usar media*/
+/*Formato a los títulos*/
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 0px;
+  color: #2e2e2e;
+  font-family: "Blinker", sans-serif;
+  display: flex;
+  justify-content: center;
+  /*Gradiente lineal*/
+  background-image: linear-gradient(to right, #d65128, #dbd6d6);
+}
+
+/*Formato a los párrafos*/
+p {
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #e6dedc;
+  line-height: 1.2em;
+  padding: 1rem;
+  width: 70%;
+}
+
+/*Estilo general de las secciones*/
+.estilos, .conocenos {
+  height: 17rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2e2e2e;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*Tamaño de imágenes en las secciones*/
+/*Agrego transición de blanco y negro a las imágenes de "Nuestros estilos" y "Conocenos", 
+primero poniendo en blanco y negro las imágenes*/
+.imagenSection {
+  width: 30.4615384615%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  filter: grayscale(1) opacity(0.8);
+}
+
+/*Ahora pongo dos efectos al hacer hover: 
+1) Transición de la imagen, revirtiendo el gris a sus colores originales
+2) Transformación de la imagen, agrandando su tamaño un 20%*/
+.imagenSection:hover {
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.1);
+}
+
+/*Aplico Media Queries para modificar el fondo de los párrafos*/
+/*Primero, para Celulares*/
+@media (max-width: 400px) {
+  .estilos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .conocenos {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .imagenSection {
+    width: 100%;
+  }
+
+  .botonesEstilos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    width: 20%;
+  }
+}
+/*Ahora para Tablets*/
+@media (min-width: 401px) and (max-width: 960px) {
+  .estilos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .conocenos {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .imagenSection {
+    width: 69.3%;
+  }
+
+  .botonesEstilos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    width: 20%;
+  }
+}
+.botonesEstilos {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2e2e2e;
+  padding-bottom: 10px;
+}
+
+.button {
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 15%;
+  background-color: #f18463;
+}
+.button:hover {
+  background-color: #aa5338;
+}
+
+/*Estilo del footer*/
+.contacto {
+  color: #858282;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 8rem;
+}
+
+/*Separación entre íconos de redes sociales del footer*/
+footer div div a {
+  padding: 2rem;
+  color: #858282;
+}
+
+/*Aplico z-index al link del footer para ir hacia arriba,
+haciendo que quede siempre fijo mientras se hace scroll en la pantalla*/
+.arriba {
+  position: fixed;
+  z-index: 10;
+  bottom: 30px;
+  left: 30px;
+  color: grey;
+}
+
+.navbar-brand {
+  margin-right: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

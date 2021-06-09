@@ -1,0 +1,25 @@
+/*Estilo del footer*/
+.contacto{
+    color: rgb(133, 130, 130);
+    background-color: rgb(29, 29, 29) ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 8rem;
+}
+/*Separación entre íconos de redes sociales del footer*/
+footer div div a{
+    padding: 2rem;
+    color: rgb(133, 130, 130);
+}
+
+/*Aplico z-index al link del footer para ir hacia arriba,
+haciendo que quede siempre fijo mientras se hace scroll en la pantalla*/
+.arriba{
+    position: fixed;
+    z-index: 10;
+    bottom: 30px;
+    left: 30px;
+    color: grey;
+}

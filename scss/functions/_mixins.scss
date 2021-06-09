@@ -1,0 +1,9 @@
+@mixin cuerpoTextos ($fontWeight, $fontSize) {
+font-weight: $fontWeight;
+font-size: $fontSize;
+margin-bottom: 0px;    
+}
+
+@mixin name {
+    
+}
