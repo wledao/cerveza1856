@@ -3,7 +3,7 @@
 @import '../base/sizes';
 
 /*Formato a los títulos*/
-h2{
+.h2Index{
     @include cuerpoTextos(bold, 2.5rem);
     color: $sectionColor; 
     font-family: 'Blinker', sans-serif;

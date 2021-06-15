@@ -1,10 +1,15 @@
-header{
+.headerIndex{
     background-image: url(../images/header.jpg);
     background-color: rgba(0, 0, 0, 0);
     background-size: cover;
     background-position: center center;
-    height: 41em;
+    height: 41rem;
     opacity: 1;
     position: relative;
+}
+.h1Index{
+    color: white;
+    text-align: center;
+    padding-top: 31rem;
 }
 

@@ -13,38 +13,35 @@
     <!--Fuentes de Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;600&display=swap" rel="stylesheet">
-    <!--Mi CSS-->
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Link para que aparezca el logo en la pestaña del navegador-->
+    <!-- Logo en la pestaña del navegador-->
     <link rel="shortcut icon" href="images/logo-1856.png">
-    <!--Descripción del sitio, para sumar el SEO-->
+    <!-- SEO -->
     <meta name="description" content="En 1856 hacemos cerveza artesanal con insumos de calidad, pero sobre
     todo con pasión y amor por la cerveza. Diferentes estilos, todos con características únicas">
-    <!-- Palabras clave, también para sumar al SEO-->
-    <meta name="keywords" content="Cerveza artesanal, milocho, estilos, Golden, IPA, Scottish, Porter, Lúpulo, Cebada, Malta, 
-    Glew, 1856">
-    <!-- Etiqueta meta para el autor de la página-->
+    <meta name="keywords" content="Cerveza artesanal, cerveza, artesanal, milocho, estilos, tipos, sabores, Golden, 
+    Honey, IPA, Scottish, Red Honey, Porter, Lúpulo, Cebada, Malta, Glew, cerveza buena en Glew, cerveza artesanal de calidad,
+    1856, agua, color, aroma, sabor, amigos, amigas, noche, fiesta, cerveza con amigos, asado, cena, ocasión, cerveza que no deja resaca,
+    insumos cerveceros, tipo de cerveza, litro, lata, growler, cerveza negra, cerveza rubia, cerveza roja">
     <meta name="author" content="Walter Espósito">
-    <!--Etiqueta meta para el propietario de los derechos del código-->
     <meta name="copyright" content="Cerveza 1856">
-    <!--Open graph para el título-->
-    <meta property="og:title" content="1856. La cerveza artesanal hecha en Glew, para el mundo.">
-    <!--Open graph para la imagen que va a aparecer-->
+    <!-- Open graph -->
+    <meta property="og:title" content="1856. La cerveza artesanal hecha en Glew, para todo el mundo.">
     <meta property="og:image" content="images/logo-1856.png">
-    <!--Open graph para referencia a la url a indexar-->
-    <meta property="og:url" content="https://cerveza1856.com">
-    <!--Open graph para la descripción-->
-    <meta property="og:description" content="1856. Hecha con pasión y amor por la cerveza. 
+    <meta property="og:image:width" content="200px">
+    <meta property="og:image:height" content="124px">
+    <meta property="og:url" content="https://cerveza1856.000webhostapp.com/">
+    <meta property="og:description" content="Hecha con pasión y amor por la cerveza. 
     Diferentes estilos, todos con características únicas">
-    <!--Open graph para el autor de la página-->
     <meta property="og:author" content="Walter Espósito">
-    <!--Open graph para indicar idioma y región de la página-->
     <meta property="og:locale" content="es_AR">
-    <title>1856. La cerveza artesanal hecha en Glew, para el mundo.</title>
+    <!-- Título de la página (pestaña del navegador)-->
+    <title>1856 - Cerveza artesanal hecha en Glew, para todo el mundo.</title>
 </head>
 
 <body>
-    <header id="inicio">
+    <header id="inicio" class="headerIndex">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0);">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex justify-content-center" href="index.html"><img src="images/logo-1856.png"
@@ -72,12 +69,13 @@
                 </div>
             </div>
         </nav>
-    </header>
+        <h1 class="h1Index">LA CERVEZA ARTESANAL DE GLEW</h1>
+        </header>
     <main>
         <section>
             <!--Título de la sección. Con id para link interno
        y una clase para CSS-->
-            <h2 id="estilos">NUESTROS ESTILOS</h2>
+            <h2 id="estilos" class="h2Index">NUESTROS ESTILOS</h2>
             <div class="estilos">
                 <!--Imagen a la izquierda-->
                 <img src="images/estilos-1856.jpg" alt="Botellas con diferentes estilos de 1856 y copa servida, "
@@ -102,7 +100,7 @@
         <section>
             <!--Título de la sección. Con id para link intrerno
          y una clase para CSS-->
-            <h2 id="conocenos">CONOCENOS</h2>
+            <h2 id="conocenos" class="h2Index">CONOCENOS</h2>
             <div class="conocenos">
                 <!--Texto descriptivo-->
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -124,16 +122,16 @@
     <footer>
         <!--Título de la sección. Con id para link interno
        y una clase para CSS-->
-        <h2 id="contacto">CONTACTO</h2>
+        <h2 id="contacto" class="h2Index">CONTACTO</h2>
         <div class="contacto">
             <!--Link interno para que me lleve al principio de la página-->
             <a class="arriba" href="#inicio"><i class="bi bi-arrow-bar-up"></i></i></a>
             <!--Incorporo los íconos de Instagram y Facebook mediante íconos de bootstrap, 
         cada uno con un link absoluto a cada una de las cuentas, abriendo en otra página-->
             <div>
-                <a href="https://www.instagram.com/cerveza.1856/" target="_blank">
+                <a href="https://www.instagram.com/cerveza.1856/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-instagram"></i></a>
-                <a href="https://www.facebook.com/cerveza.1856" target="_blank">
+                <a href="https://www.facebook.com/cerveza.1856" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-facebook"></i></a>
             </div>
             <div>

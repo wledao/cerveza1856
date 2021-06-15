@@ -7,20 +7,26 @@
 }
 
 /*Importo los scss de las diferentes secciones */
-header {
+.headerIndex {
   background-image: url(../images/header.jpg);
   background-color: rgba(0, 0, 0, 0);
   background-size: cover;
   background-position: center center;
-  height: 41em;
+  height: 41rem;
   opacity: 1;
   position: relative;
+}
+
+.h1Index {
+  color: white;
+  text-align: center;
+  padding-top: 31rem;
 }
 
 /*Colores para las secciones*/
 /*Altura para las secciones al usar media*/
 /*Formato a los títulos*/
-h2 {
+.h2Index {
   font-weight: bold;
   font-size: 2.5rem;
   margin-bottom: 0px;
@@ -178,6 +184,38 @@ haciendo que quede siempre fijo mientras se hace scroll en la pantalla*/
 
 .navbar-brand {
   margin-right: 0px;
+}
+
+.header404 {
+  background-color: black;
+  height: 38.05rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.h1404 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 3rem;
+}
+
+.h2404 {
+  color: white;
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.aVolver {
+  padding: 4rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #f17c1c;
+}
+.aVolver:hover {
+  color: #ffc400;
 }
 
 /*# sourceMappingURL=style.css.map */
